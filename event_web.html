@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Sphere - The Event Management Website</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f7f7f7; }
+        header { background: #333; color: white; padding: 15px 0; }
+        .container { width: 90%; max-width: 1100px; margin: auto; }
+        nav a { color: white; text-decoration: none; margin-right: 15px; }
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+            background: #ffd54f;
+        }
+        .hero img {
+            width: 260px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        section { padding: 25px 0; background: white; margin-bottom: 10px; }
+        .flex { display: flex; flex-wrap: wrap; gap: 20px; }
+        .flex img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 10px;
+        }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 8px; }
+        th { background: #eee; }
+        form { max-width: 500px; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea {
+            width: 100%; padding: 7px; margin-top: 3px;
+        }
+        input[type="submit"] {
+            width: auto; margin-top: 15px;
+            background: #333; color: white;
+            border: none; cursor: pointer; padding: 8px 14px;
+        }
+        footer {
+            
+            background: #333; color: white;
+            text-align: center; padding: 10px 0;
+        }
+        #saved-info {
+            margin-top: 15px;
+            font-size: 14px;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        #saved-info strong { color: #333; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1><u>Event Sphere</u>- The Event Management Website</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#events">Events</a>
+            <a href="#booking">Book</a>
+            <a href="#contact">Contact</a>
+            <a href="login.html" style="background: #3c9d9b; padding: 8px 12px; border-radius: 5px; margin-left: 20px;">Login</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO IMAGE (Wedding Event) -->
+<section id="home" class="hero">
+    <h1><u>Welcome to Event Sphere</u></h1>
+    <p>(Here we transform your events into beautiful memories)</p>
+    <img src="https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg"
+         alt="Wedding Event Decoration">
+</section>
+
+<!-- ABOUT SECTION WITH EVENT MANAGEMENT IMAGE -->
+<section id="about">
+    <div class="container flex">
+        <div>
+            <h2><u>About Us-</u></h2>
+            <p>
+                Event Sphere specializes in wedding planning, corporate events,
+                birthday parties, and social gatherings. We turn your events into unforgettable memories.
+            </p>
+            <p>
+                Our team manages decoration, catering, photography, logistics, and complete event execution.
+            </p>
+        </div>
+
+        <div>
+            <img src="data:image/jpeg;base64,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"
+                 alt="Event Planner Working">
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="container">
+        <h2><u>Our Services-</u></h2><br>
+        <ul>
+            <li>Wedding Planning--</li><br>
+            <img src=https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg
+             width="350" style="border-radius: 8px; margin-bottom: 10px;"
+             alt="Corporate Conference">
+            <li>Corporate Conferences--</li><br>
+            <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg"
+             width="350" style="border-radius: 8px; margin-bottom: 10px;"
+             alt="Corporate Conference">
+            <li>Birthday Parties--</li><br>
+             <img src="https://images.pexels.com/photos/137485/pexels-photo-137485.jpeg"
+             width="350" style="border-radius: 8px; margin-bottom: 10px;"
+             alt="Corporate Conference">
+            <li>School & College Events--</li><br>
+             <img src="https://images.pexels.com/photos/35090813/pexels-photo-35090813.jpeg"
+             width="350" style="border-radius: 8px; margin-bottom: 10px;"
+             alt="Corporate Conference">
+            <li>Product Launch Events--</li><br>
+             <img src="https://images.pexels.com/photos/14999408/pexels-photo-14999408.jpeg"
+             width="350" style="border-radius: 8px; margin-bottom: 10px;"
+             alt="Corporate Conference">
+        </ul>
+    </div>
+</section>
+
+<!-- EVENTS TABLE WITH RELEVANT IMAGE (Corporate Event) -->
+<section id="events">
+    <div class="container">
+        <h2><u>Upcoming Events-</u></h2><br>
+        <br>
+        
+
+        <table>
+            <tr>
+                <th>Event Name</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Tech Innovators Meet</td>
+                <td>Corporate</td>
+                <td>15 Jan 2026</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>Royal Wedding – A & M</td>
+                <td>Wedding</td>
+                <td>22 Feb 2026</td>
+                <td>Jaipur</td>
+            </tr>
+            <tr>
+                <td>Kids Theme Birthday</td>
+                <td>Birthday</td>
+                <td>5 Mar 2026</td>
+                <td>Mumbai</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="booking">
+    <div class="container">
+        <br>
+        <h2><u>Book Your Event-</u></h2>
+        
+        <form id="bookingForm">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Mobile:</label>
+            <input type="tel" id="mobile" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Event Type:</label>
+            <select id="eventType" required>
+                <option value="">-- Select --</option>
+                <option>Wedding</option>
+                <option>Corporate Event</option>
+                <option>Birthday Party</option>
+                <option>College Event</option>
+            </select>
+
+            <label>Event Date:</label>
+            <input type="date" id="eventDate">
+
+            <label>Details:</label>
+            <textarea id="details"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- LocalStorage info -->
+        <div id="saved-info">
+            <strong>Saved bookings in this browser:</strong>
+            <span id="booking-count">0</span><br>
+            <span id="last-booking"></span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <h2><u>Contact Us-</u></h2>
+        <p><strong>Phone:</strong> +919356456553</p>
+        <p><strong>Email:</strong> eventsphere@gmail.com</p>
+        <p><strong>Address:</strong> MG Road, New Delhi</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Event Sphere</p>
+</footer>
+
+<!-- JAVASCRIPT FOR LOCALSTORAGE -->
+<script>
+    // Load existing bookings when page opens
+    function loadBookings() {
+        const data = localStorage.getItem("eventBookings");
+        let bookings = [];
+        if (data) {
+            bookings = JSON.parse(data);
+        }
+
+        // Update count
+        document.getElementById("booking-count").textContent = bookings.length;
+
+        // Show last booking (if any)
+        const lastDiv = document.getElementById("last-booking");
+        if (bookings.length > 0) {
+            const last = bookings[bookings.length - 1];
+            lastDiv.textContent =
+                "Last booking: " + last.name + " for " + last.eventType + " on " + (last.eventDate || "N/A");
+        } else {
+            lastDiv.textContent = "No bookings saved yet.";
+        }
+    }
+
+    // Handle form submit
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // stop normal form submit / page reload
+
+        // Read values
+        const name = document.getElementById("name").value.trim();
+        const mobile = document.getElementById("mobile").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const eventType = document.getElementById("eventType").value;
+        const eventDate = document.getElementById("eventDate").value;
+        const details = document.getElementById("details").value.trim();
+
+        // Simple validation
+        if (!name || !mobile || !email || !eventType) {
+            alert("Please fill all required fields.");
+            return;
+        }
+
+        // Get old bookings from localStorage
+        const oldData = localStorage.getItem("eventBookings");
+        let bookings = [];
+        if (oldData) {
+            bookings = JSON.parse(oldData);
+        }
+
+        // Add new booking
+        bookings.push({
+            name: name,
+            mobile: mobile,
+            email: email,
+            eventType: eventType,
+            eventDate: eventDate,
+            details: details,
+            time: new Date().toISOString()
+        });
+
+        // Save back to localStorage
+        localStorage.setItem("eventBookings", JSON.stringify(bookings));
+
+        // Clear form
+        document.getElementById("bookingForm").reset();
+
+        // Refresh info box
+        loadBookings();
+
+        alert("Your booking has been saved in this browser!");
+    });
+
+    // When page loads, show existing bookings
+    window.addEventListener("load", loadBookings);
+</script>
+
+</body>
+</html>
